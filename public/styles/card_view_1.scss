@@ -2,10 +2,19 @@
     position: relative;
     width: 600px; height: 350px;
     border-radius: 20px;
-    display: flex;
-    align-items: center;
     transition: 0.5s;
     font-family: 'Poppins', sans-serif;
+    @include displayFlex(row, nowrap, center, flex-start, center);
+
+    @include respond(tab-port) {
+        width: auto;
+        max-width: 350px;
+        align-items: flex-start;
+
+        &:hover {
+            height: 600px;
+        }
+    }
 
     &__circle {
         position: absolute;
@@ -29,7 +38,6 @@
         clip-path: circle(400px at center);
     }
 
-    
     &__content {
         position: relative;
         width: 50%;
@@ -39,12 +47,19 @@
         padding: 20px 20px 20px 40px;
         transition: 0.5s;
 
+        @include respond(tab-port) {
+            width: 100%;
+            left: 0;
+            padding: 30px 30px 20px;
+        }
+
         h2 {
             color: #fff;
             text-transform: uppercase;
             font-size: 2rem;
             line-height: 1rem;
-            margin-bottom: 5px;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
         }
         p {
             color: #fff;
@@ -69,15 +84,21 @@
     
 
     &__img {
-        position: absolute;
-        top: 50%; left: 50%;
-        transform: translate(-50%, -50%);
+        @include absCenter();
         height: 300px;
         pointer-events: none;
         transition: 0.5s; 
+
+        
     }
     &:hover &__img {
         left: 72%;
         height: 500px;
+
+        @include respond(tab-port) {
+            top: 70%;
+            left: 50%;
+            height: 300px;
+        }
     }
 }
