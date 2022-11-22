@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    border-bottom: 5px dashed #dadada;
+    margin-bottom: 2rem;
+    min-height: 600px;
+    padding: 10rem 0;
+    @include displayFlex(row, wrap, center, center, center)
+}
