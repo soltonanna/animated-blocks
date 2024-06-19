@@ -21,4 +21,4 @@ npm start
 ```
 
 ## Demo
-<a href="https://soltonanna.github.io/animated-texts/" target="blank"> DEMO </a>
+<a href="https://soltonanna.github.io/animated-blocks/" target="blank"> DEMO </a>
