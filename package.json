@@ -10,7 +10,7 @@
     "deploy": "gh-pages -d dist"
   },
   "keywords": [],
-  "author": "",
+  "author": "Anahit Sultanova",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.20.2",

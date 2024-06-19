@@ -7,7 +7,6 @@
 section {
     @include displayFlex(row, wrap, center, center, center);
     border-bottom: 5px dashed #dadada;
-    //margin-bottom: 2rem;
     min-height: 600px;
-    padding: 2rem 0;
+    padding: 4rem 0 3rem;
 }
